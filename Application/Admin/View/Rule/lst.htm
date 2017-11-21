@@ -1,0 +1,60 @@
+<div class="page-content">
+    <!-- Page Breadcrumb -->
+    <div class="page-breadcrumbs">
+        <ul class="breadcrumb">
+            <li>
+                <a href="javascript:;">权限管理</a>
+            </li>
+            <li class="active">权限列表</li>
+        </ul>
+    </div>
+    <!-- /Page Breadcrumb -->
+    <!-- Page Body -->
+    <div class="page-body">
+        <button type="button" tooltip="添加权限" class="btn btn-sm btn-azure btn-addon" onClick="javascript:window.location.href = '/admin/rule/add'"> <i class="fa fa-plus"></i> 添加权限
+        </button>
+        <div class="row">
+            <div class="col-lg-12 col-sm-12 col-xs-12">
+                <div class="widget">
+                    <div class="widget-body">
+                        <div class="flip-scroll">
+                            <form action="">
+                                <table class="table table-bordered table-hover">
+                                    <thead class="">
+                                        <tr>
+                                            <th class="text-left">权限名称</th>
+                                            <th class="text-center">权限</th>
+                                            <th class="text-center" width="20%">操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <foreach name="list" item="vo">
+                                            <tr>
+                                                <td align="left">{$vo['_name']}</td>
+                                                <td align="center">{$vo['name']}</td>
+                                                <td align="center">
+                                                    <a href="{:U('rule/add',array('pid'=>$vo['id']))}" class="btn btn-default btn-sm purple">
+                                                        <i class="fa fa-plus-square"></i> 添加子权限
+                                                    </a>
+                                                    <a href="{:U('rule/edit',array('id'=>$vo['id']))}" class="btn btn-primary btn-sm shiny">
+                                                        <i class="fa fa-edit"></i> 编辑
+                                                    </a>
+                                                    <a href="javascript:;" onClick="warning('确实要删除吗', '{:U('rule/del',array('id'=>$vo['id']))}')" class="btn btn-danger btn-sm shiny">
+                                                        <i class="fa fa-trash-o"></i> 删除
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </foreach>
+                                    </tbody>
+                                </table>
+                            </form>
+                        </div>
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Page Body -->
+</div>

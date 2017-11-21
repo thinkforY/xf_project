@@ -1,0 +1,30 @@
+[ 2017-11-15T16:53:12+08:00 ] ::1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000637s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-11-15T16:53:26+08:00 ] ::1 /Public/Admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-15T16:53:36+08:00 ] ::1 /Public/Admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000658s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-15T16:53:41+08:00 ] ::1 /Public/Admin/js/jquery.slimscroll.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000659s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-15T16:58:40+08:00 ] ::1 /Public/Admin/js/jquery.slimscroll.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000557s ]
+ERR: 无法加载模块:Public
+

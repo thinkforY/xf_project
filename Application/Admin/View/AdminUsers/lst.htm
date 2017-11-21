@@ -1,0 +1,57 @@
+<div class="page-content">
+    <!-- Page Breadcrumb -->
+    <div class="page-breadcrumbs">
+        <ul class="breadcrumb">
+            <li>
+                <a href="javascript:;">管理员管理</a>
+            </li>
+            <li class="active">管理员列表</li>
+        </ul>
+    </div>
+    <!-- /Page Breadcrumb -->
+    <!-- Page Body -->
+    <div class="page-body">
+        <button type="button" tooltip="添加管理员" class="btn btn-sm btn-azure btn-addon" onClick="javascript:window.location.href = '/admin/adminUsers/add'"> <i class="fa fa-plus"></i> 添加管理员
+        </button>
+        <div class="row">
+            <div class="col-lg-12 col-sm-12 col-xs-12">
+                <div class="widget">
+                    <div class="widget-body">
+                        <div class="flip-scroll">
+                            <form action="">
+                                <table class="table table-bordered table-hover">
+                                    <thead class="">
+                                        <tr>
+                                            <th class="text-center">ID</th>
+                                            <th class="text-center">管理员名称</th>
+                                            <th class="text-center">用户组</th>
+                                            <th class="text-center" width="20%">操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <foreach name="list" item="vo">
+                                            <tr>
+                                                <td align="center" width="5%">{$vo['id']}</td>
+                                                <td align="center" width="20%">{$vo['username']}</td>
+                                                <td align="center">{$vo['title']}</td>
+                                                <td align="center">
+                                                    <a href="{:U('adminUsers/edit',array('id'=>$vo['id']))}" class="btn btn-primary btn-sm shiny">
+                                                        <i class="fa fa-edit"></i> 编辑或修改用户组
+                                                    </a>
+                                                    
+                                                </td>
+                                            </tr>
+                                        </foreach>
+                                    </tbody>
+                                </table>
+                            </form>
+                        </div>
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Page Body -->
+</div>

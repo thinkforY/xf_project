@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <title>ThinkPHP3.2.3</title>
+
+    <meta name="description" content="Dashboard">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="shortcut icon" href="__ADMIN_IMG__/favicon.png" type="image/x-icon">
+    <!--Basic Styles-->
+    <link href="__ADMIN_CSS__/bootstrap.css" rel="stylesheet">
+    <link href="__ADMIN_CSS__/font-awesome.css" rel="stylesheet">
+    <link href="__ADMIN_CSS__/weather-icons.css" rel="stylesheet">
+
+    <!--Beyond styles-->
+    <link id="beyond-link" href="__ADMIN_CSS__/beyond.css" rel="stylesheet" type="text/css">
+    <link href="__ADMIN_CSS__/demo.css" rel="stylesheet">
+    <link href="__ADMIN_CSS__/typicons.css" rel="stylesheet">
+    <link href="__ADMIN_CSS__/animate.css" rel="stylesheet">
+    
+</head>
+<body>
+  <!-- 头部 -->
+  <div class="navbar">
+    <div class="navbar-inner">
+        <div class="navbar-container">
+            <!-- Navbar Barnd -->
+            <div class="navbar-header pull-left">
+                <a href="#" class="navbar-brand">
+                    <small>
+                            XF后台管理系统
+                        </small>
+                </a>
+            </div>
+            <!-- /Navbar Barnd -->
+            <!-- Sidebar Collapse -->
+            <div class="sidebar-collapse" id="sidebar-collapse">
+                <i class="collapse-icon fa fa-bars"></i>
+            </div>
+            <!-- /Sidebar Collapse -->
+            <!-- Account Area and Settings -->
+            <div class="navbar-header pull-right">
+                <div class="navbar-account">
+                    <ul class="account-area">
+                        <li>
+                            <a class="login-area dropdown-toggle" data-toggle="dropdown">
+                                <div class="avatar" title="View your public profile">
+                                    <img src="images/adam-jansen.jpg">
+                                </div>
+                                <section>
+                                    <h2><span class="profile"><span>admin</span></span></h2>
+                                </section>
+                            </a>
+                            <!--Login Area Dropdown-->
+                            <ul class="pull-right dropdown-menu dropdown-arrow dropdown-login-area">
+                                <li class="username"><a>David Stevenson</a></li>
+                                <li class="dropdown-footer">
+                                    <a href="{:U('index/signout')}">
+                                            退出登录
+                                        </a>
+                                </li>
+                                <li class="dropdown-footer">
+                                    <a href="/admin/user/changePwd.html">
+                                            修改密码
+                                        </a>
+                                </li>
+                            </ul>
+                            <!--/Login Area Dropdown-->
+                        </li>
+                        <!-- /Account Area -->
+                        <!--Note: notice that setting div must start right after account area list.
+                            no space must be between these elements-->
+                        <!-- Settings -->
+                    </ul>
+                </div>
+            </div>
+            <!-- /Account Area and Settings -->
+        </div>
+    </div>
+</div>
+
+  <!-- /头部 -->
+  
+  <div class="main-container container-fluid">
+    <div class="page-container">
+                  <!-- Page Sidebar -->
+            <div class="page-sidebar" id="sidebar">
+                <!-- Page Sidebar Header-->
+                <div class="sidebar-header-wrapper">
+                    <input class="searchinput" type="text">
+                    <i class="searchicon fa fa-search"></i>
+                    <div class="searchhelper">Search Reports, Charts, Emails or Notifications</div>
+                </div>
+                <!-- /Page Sidebar Header -->
+                <!-- Sidebar Menu -->
+                <ul class="nav sidebar-menu">
+                    <!--Dashboard-->
+                    <foreach name="menu" item="vo">
+                        <if condition="empty($vo['_data'])">
+                            <li <if condition="$vo['id'] eq $data['id']">class="active"</if>>
+                                <a href="{:U($vo['mca'],array('activeId'=>$vo['id']))}" class="menu-dropdown">
+                                    <i class="menu-icon fa {$vo['icon']}"></i>
+                                    <span class="menu-text">{$vo['name']}</span>
+                                </a>
+                            </li>
+                            <else/>
+                            <li <if condition="$vo['id'] eq $data['pid']">class="active open"</if>>
+                                <a href="#" class="menu-dropdown">
+                                    <i class="menu-icon fa {$vo['icon']}"></i>
+                                    <span class="menu-text">{$vo['name']}</span>
+                                    <i class="menu-expand"></i>
+                                </a>
+                                <ul class="submenu">
+                                    <foreach name="vo['_data']" item="vo1">
+                                        <li <if condition="$vo1['id'] eq $data['id']">class="active"</if>>
+                                            <a href="{:U($vo1['mca'],array('activeId'=>$vo1['id']))}">
+                                                <span class="menu-text">{$vo1['name']}</span>
+                                                <i class="menu-expand"></i>
+                                            </a>
+                                        </li>
+                                    </foreach>
+                                </ul>                            
+                            </li> 
+                        </if>
+                    </foreach>
+                </ul>
+                <!-- /Sidebar Menu -->
+            </div>
+            <!-- /Page Sidebar -->
+            <!-- Page Content -->
+                {__CONTENT__}
+            <!-- /Page Content -->
+    </div>  
+  </div>
+      <!--Basic Scripts-->
+    <script src="__ADMIN_JS__/jquery_002.js"></script>
+    <script src="__ADMIN_JS__/bootstrap.js"></script>
+    <script src="__ADMIN_JS__/jquery.js"></script>
+    <script src="__ADMIN_JS__/select2.js"></script>
+    <!--Beyond Scripts-->
+    <script src="__ADMIN_JS__/beyond.js"></script>
+    
+
+
+</body></html>

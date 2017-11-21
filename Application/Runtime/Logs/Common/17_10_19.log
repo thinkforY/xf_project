@@ -1,0 +1,276 @@
+[ 2017-10-19T15:17:36+08:00 ] ::1 /Public/Admin/css/admin.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000568s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-19T15:17:36+08:00 ] ::1 /Public/Admin/js/layui.all.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000551s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-19T15:17:36+08:00 ] ::1 /Public/Admin/js/admin.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000566s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-19T15:17:36+08:00 ] ::1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-10-19T15:17:40+08:00 ] ::1 /Public/Admin/css/admin.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000614s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-19T15:17:40+08:00 ] ::1 /Public/Admin/js/layui.all.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000486s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-19T15:17:40+08:00 ] ::1 /Public/Admin/js/admin.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000578s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-19T15:17:40+08:00 ] ::1 /Public/Admin/js/layui.all.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000562s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-19T15:17:40+08:00 ] ::1 /Public/Admin/js/admin.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-19T15:46:43+08:00 ] ::1 /Public/bootstrap.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000770s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-19T15:46:43+08:00 ] ::1 /Public/font-awesome.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000609s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-19T15:46:43+08:00 ] ::1 /Public/demo.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000549s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-19T15:46:43+08:00 ] ::1 /Public/beyond.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001143s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-19T15:46:43+08:00 ] ::1 /Public/animate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000534s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-19T15:49:05+08:00 ] ::1 /Public/Admin/js/jquery.slimscroll.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000894s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-19T15:49:37+08:00 ] ::1 /Public/Admin/js/jquery.slimscroll.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000759s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-19T15:49:39+08:00 ] ::1 /Public/Admin/js/jquery.slimscroll.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000804s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-19T15:51:05+08:00 ] ::1 /Public/Admin/js/jquery.slimscroll.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000770s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-19T15:55:00+08:00 ] ::1 /Public/Admin/js/jquery.slimscroll.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000635s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-19T16:55:29+08:00 ] ::1 /Public/Admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000633s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-19T16:55:59+08:00 ] ::1 /index.php/images/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000599s ]
+ERR: 无法加载模块:Images
+
+[ 2017-10-19T16:55:59+08:00 ] ::1 /index.php/images/adam-jansen.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000658s ]
+ERR: 无法加载模块:Images
+
+[ 2017-10-19T16:55:59+08:00 ] ::1 /Public/Admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000488s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-19T16:56:22+08:00 ] ::1 /Public/Admin/js/jquery.slimscroll.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000540s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-19T16:57:11+08:00 ] ::1 /index.php/images/adam-jansen.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001738s ]
+ERR: 无法加载模块:Images
+
+[ 2017-10-19T16:57:12+08:00 ] ::1 /Public/Admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000688s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-19T16:57:12+08:00 ] ::1 /Public/Admin/js/jquery.slimscroll.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000566s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-19T17:31:52+08:00 ] ::1 /index.php/images/adam-jansen.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000606s ]
+ERR: 无法加载模块:Images
+
+[ 2017-10-19T17:31:52+08:00 ] ::1 /Public/Admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-19T17:31:58+08:00 ] ::1 /Public/Admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000606s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-19T17:32:40+08:00 ] ::1 /Public/Admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-19T17:36:11+08:00 ] ::1 /Public/Admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000653s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-19T17:42:16+08:00 ] ::1 /Public/Admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000603s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-19T17:43:17+08:00 ] ::1 /Public/Admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001260s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-19T17:43:19+08:00 ] ::1 /Public/Admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001069s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-19T17:44:32+08:00 ] ::1 /Public/Admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000756s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-19T17:45:55+08:00 ] ::1 /Public/Admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000118s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001532s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-19T17:47:11+08:00 ] ::1 /Public/Admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000584s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-19T17:54:43+08:00 ] ::1 /Public/Admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000550s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-19T17:57:30+08:00 ] ::1 /Public/Admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000527s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-19T17:57:35+08:00 ] ::1 /Public/Admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000557s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-19T17:57:37+08:00 ] ::1 /Public/Admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-19T17:57:38+08:00 ] ::1 /Public/Admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-19T17:57:39+08:00 ] ::1 /Public/Admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000566s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-19T17:57:40+08:00 ] ::1 /Public/Admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000599s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-19T17:57:59+08:00 ] ::1 /Public/Admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000511s ]
+ERR: 无法加载模块:Public
+
