@@ -6,7 +6,7 @@
                 <a href="#">菜单管理</a>
             </li>
             <li>
-                <a href="{:U('menu/lst')}">菜单列表</a>
+                <a href="{:U('conf/lst')}">菜单列表</a>
             </li>
             <li class="active">编辑菜单</li>
         </ul>
@@ -24,26 +24,57 @@
                     </div>
                     <div class="widget-body">
                         <div id="horizontal-form">
-                            <form class="form-horizontal" role="form" action="{:U('menu/save')}" method="post">
+                            <form class="form-horizontal" role="form" action="{:U('conf/editSave')}" method="post">
                                 <input type="hidden" name="id" value="{$data['id']}">
-                                <div class="form-group">
-                                    <label for="username" class="col-sm-2 control-label no-padding-right">菜单名称</label>
+                                 <div class="form-group">
+                                    <label for="cname" class="col-sm-2 control-label no-padding-right">中文名称</label>
                                     <div class="col-sm-6">
-                                        <input class="form-control" id="name" placeholder="" name="name" value="{$data['name']}" required="" type="text">
+                                        <input class="form-control" required="" id="cname" placeholder="" name="cname" value="{$data.cname}" required="" type="text">
                                     </div>
                                     <p class="help-block col-sm-4 red">* 必填</p>
                                 </div>
                                 <div class="form-group">
-                                    <label for="username" class="col-sm-2 control-label no-padding-right">模块/控制器/方法</label>
+                                    <label for="ename" class="col-sm-2 control-label no-padding-right">英文名称</label>
                                     <div class="col-sm-6">
-                                        <input class="form-control" id="mca" placeholder="Admin/Index/index" value="{$data['mca']}" name="mca" required="" type="text">
+                                        <input class="form-control" required="" id="ename" placeholder="" name="ename" value="{$data.ename}" required="" type="text">
                                     </div>
                                     <p class="help-block col-sm-4 red">* 必填</p>
                                 </div>
                                 <div class="form-group">
-                                    <label for="username" class="col-sm-2 control-label no-padding-right">图标</label>
+                                    <label for="d_type" class="col-sm-2 control-label no-padding-right">配置类型</label>
                                     <div class="col-sm-6">
-                                        <input class="form-control" id="icon" placeholder="" name="icon" value="{$data['icon']}" type="text">
+                                        <select class="form-control" required="" name="d_type" id="d_type">
+                                            <option <if condition="$data['d_type'] eq 1">selected="selected"</if> value="1">输入框</option>
+                                            <option <if condition="$data['d_type'] eq 2">selected="selected"</if> value="2">单选框</option>
+                                            <option <if condition="$data['d_type'] eq 3">selected="selected"</if> value="3">复选框</option>
+                                            <option <if condition="$data['d_type'] eq 4">selected="selected"</if> value="4">下拉菜单</option>
+                                            <option <if condition="$data['d_type'] eq 5">selected="selected"</if> value="5">文本域</option>
+                                            <option <if condition="$data['d_type'] eq 6">selected="selected"</if> value="6">附件</option>
+                                        </select>
+                                    </div>
+                                    <p class="help-block col-sm-4 red">* 必填</p>
+                                </div>
+                                <div class="form-group">
+                                    <label  class="col-sm-2 control-label no-padding-right">配置分类</label>
+                                    <div class="col-sm-6">
+                                        <select class="form-control" required="" name="c_type" id="c_type">
+                                            <option <if condition="$data['c_type'] eq 1">selected="selected"</if> value="1">基本配置</option>
+                                            <option <if condition="$data['c_type'] eq 2">selected="selected"</if> value="2">联系方式</option>
+                                            <option <if condition="$data['c_type'] eq 3">selected="selected"</if> value="3">SEO配置</option>
+                                        </select>
+                                    </div>
+                                    <p class="help-block col-sm-4 red">* 必填</p>
+                                </div>
+                                <div class="form-group">
+                                    <label  class="col-sm-2 control-label no-padding-right">默认值</label>
+                                    <div class="col-sm-6">
+                                        <input class="form-control" value="{$data.value}" id="value" placeholder="" name="value" type="text">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label  class="col-sm-2 control-label no-padding-right">可选值</label>
+                                    <div class="col-sm-6">
+                                        <input class="form-control" value="{$data.values}" id="values" placeholder="" name="values" type="text">
                                     </div>
                                 </div>
                                 <div class="form-group">

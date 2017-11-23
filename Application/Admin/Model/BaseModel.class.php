@@ -8,6 +8,11 @@ use Think\Model;
 */
 class BaseModel extends Model
 {
+    //查询一条数据
+    public function findOne($model,$id,$fields){
+        $result = $model->field($fields)->find($id);
+        return $result;
+    }
 	/**
      * 添加数据
      * @param  array $data  添加的数据

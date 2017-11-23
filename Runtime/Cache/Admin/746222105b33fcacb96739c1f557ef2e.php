@@ -128,29 +128,33 @@
     <div class="page-breadcrumbs">
         <ul class="breadcrumb">
             <li>
-                <a href="javascript:;">菜单管理</a>
+                <a href="javascript:;">配置项管理</a>
             </li>
-            <li class="active">菜单列表</li>
+            <li class="active">配置项列表</li>
         </ul>
     </div>
     <!-- /Page Breadcrumb -->
     <!-- Page Body -->
     <div class="page-body">
-        <button type="button" tooltip="添加菜单" class="btn btn-sm btn-azure btn-addon" onClick="javascript:window.location.href = '/admin/menu/add'"> <i class="fa fa-plus"></i> 添加菜单
+        <button type="button" tooltip="添加配置项" class="btn btn-sm btn-azure btn-addon" onClick="javascript:window.location.href = '/admin/conf/add'"> <i class="fa fa-plus"></i> 添加配置项
         </button>
         <div class="row">
             <div class="col-lg-12 col-sm-12 col-xs-12">
                 <div class="widget">
                     <div class="widget-body">
                         <div class="flip-scroll">
-                            <form action="<?php echo U('menu/order');?>" method="post">
+                            <form action="<?php echo U('conf/order');?>" method="post">
                                 <table class="table table-bordered table-hover">
                                     <thead class="">
                                         <tr>
                                             <th class="text-center" width="2%">排序</th>
                                             <th class="text-center">ID</th>
-                                            <th class="text-center">菜单名称</th>
-                                            <th class="text-center">控制方法</th>
+                                            <th class="text-center">中文名称</th>
+                                            <th class="text-center">英文名称</th>
+                                            <th class="text-center">配置类型</th>
+                                            <th class="text-center">配置分类</th>
+                                            <th class="text-center">默认值</th>
+                                            <th class="text-center">可选值</th>
                                             <th class="text-center" width="20%">操作</th>
                                         </tr>
                                     </thead>
@@ -158,16 +162,17 @@
                                         <?php if(is_array($list)): foreach($list as $key=>$vo): ?><tr>
                                                 <td align="center"><input align="center" type="text" name="<?php echo ($vo['id']); ?>" value="<?php echo ($vo['sort']); ?>"></td>
                                                 <td align="center"><?php echo ($vo['id']); ?></td>
-                                                <td align="left"><?php echo ($vo['_name']); ?></td>
-                                                <td align="center"><?php echo ($vo['mca']); ?></td>
+                                                <td align="center"><?php echo ($vo['cname']); ?></td>
+                                                <td align="center"><?php echo ($vo['ename']); ?></td>
+                                                <td align="center"><?php echo ($vo['d_type']); ?></td>
+                                                <td align="center"><?php echo ($vo['c_type']); ?></td>
+                                                <td align="center"><?php echo ($vo['value']); ?></td>
+                                                <td align="center"><?php echo ($vo['values']); ?></td>
                                                 <td align="center">
-                                                    <a href="<?php echo U('menu/add',array('pid'=>$vo['id']));?>" class="btn btn-default btn-sm purple">
-                                                        <i class="fa fa-plus-square"></i> 添加子菜单
-                                                    </a>
-                                                    <a href="<?php echo U('menu/edit',array('id'=>$vo['id']));?>" class="btn btn-primary btn-sm shiny">
+                                                    <a href="<?php echo U('conf/edit',array('id'=>$vo['id']));?>" class="btn btn-primary btn-sm shiny">
                                                         <i class="fa fa-edit"></i> 编辑
                                                     </a>
-                                                    <a href="#" onClick="warning('确实要删除吗', '<?php echo U('menu/del',array('id'=>$vo['id']));?>')" class="btn btn-danger btn-sm shiny">
+                                                    <a href="#" onClick="warning('确实要删除吗', '<?php echo U('conf/del',array('id'=>$vo['id']));?>')" class="btn btn-danger btn-sm shiny">
                                                         <i class="fa fa-trash-o"></i> 删除
                                                     </a>
                                                 </td>
