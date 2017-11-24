@@ -3,60 +3,114 @@
     <div class="page-breadcrumbs">
         <ul class="breadcrumb">
             <li>
-                <a href="javascript:;">配置项管理</a>
+                <a href="#">配置项管理</a>
             </li>
-            <li class="active">配置项列表</li>
+            <li>
+                <a href="{:U('conf/lstconf')}">配置</a>
+            </li>
         </ul>
     </div>
     <!-- /Page Breadcrumb -->
+
     <!-- Page Body -->
     <div class="page-body">
-        <button type="button" tooltip="添加配置项" class="btn btn-sm btn-azure btn-addon" onClick="javascript:window.location.href = '/admin/conf/add'"> <i class="fa fa-plus"></i> 添加配置项
-        </button>
+                    
         <div class="row">
             <div class="col-lg-12 col-sm-12 col-xs-12">
                 <div class="widget">
+                    <div class="widget-header bordered-bottom bordered-blue">
+                        <span class="widget-caption">系统配置</span>
+                    </div>
                     <div class="widget-body">
-                        <div class="flip-scroll">
-                            <form method="post">
-                                <table class="table table-bordered table-hover">
-                                    <thead class="">
-                                        <tr>
-                                            <th class="text-center">ID</th>
-                                            <th class="text-center">配置项名称</th>
-                                            <th class="text-center">控制方法</th>
-                                            <th class="text-center" width="20%">操作</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <foreach name="list" item="vo">
-                                            <tr>
-                                                <td align="center">{$vo['id']}</td>
-                                                <td align="left">{$vo['_name']}</td>
-                                                <td align="center">{$vo['mca']}</td>
-                                                <td align="center">
-                                                    <a href="{:U('conf/add',array('pid'=>$vo['id']))}" class="btn btn-default btn-sm purple">
-                                                        <i class="fa fa-plus-square"></i> 添加子配置项
-                                                    </a>
-                                                    <a href="{:U('conf/edit',array('id'=>$vo['id']))}" class="btn btn-primary btn-sm shiny">
-                                                        <i class="fa fa-edit"></i> 编辑
-                                                    </a>
-                                                    <a href="#" onClick="warning('确实要删除吗', '{:U('conf/del',array('id'=>$vo['id']))}')" class="btn btn-danger btn-sm shiny">
-                                                        <i class="fa fa-trash-o"></i> 删除
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                        </foreach>
-                                    </tbody>
-                                </table>
+                        <div id="horizontal-form">
+                            <form class="form-horizontal" role="form" action="" method="post" enctype="multipart/form-data">
+                            <?php foreach($configres as $k=>$v):?>
+                                <?php if($v['d_type']==1):?>
+                                    <div class="form-group">
+                                        <label for="cname" class="col-sm-2 control-label no-padding-right"><?php echo $v['cname'];?></label>
+                                        <div class="col-sm-6">
+                                            <input class="form-control" id="cname" placeholder="" value="<?php echo $v['value'];?>" name="<?php echo $v['ename'];?>"  type="text">
+                                        </div>
+                                        
+                                    </div>
+                                <?php endif;?>
+                                <?php if($v['d_type']==2):?>
+                                    <div class="form-group">
+                                        <label for="cname" class="col-sm-2 control-label no-padding-right"><?php echo $v['cname'];?></label>
+                                        <div class="col-sm-6">
+                                            <?php $v_arr=explode(',',$v['values']);
+                                                foreach($v_arr as $k1=>$v1):
+                                            ?>
+                                                <label>
+                                                    <input <?php if($v1==$v['value']){echo 'checked="checked"';}?> class="inverted" name="<?php echo $v['ename'];?>" value="<?php echo $v1;?>" type="radio">
+                                                    <span class="text"><?php echo $v1;?></span>
+                                                </label>
+                                            <?php endforeach;?>
+                                        </div>
+                                        
+                                    </div>
+                                <?php endif;?>
+                                <?php if($v['d_type']==3):?>
+                                    <div class="form-group">
+                                        <label for="cname" class="col-sm-2 control-label no-padding-right"><?php echo $v['cname'];?></label>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input <?php if($v['value']==$v['values']){echo 'checked="checked"';}?> name="<?php echo $v['ename'];?>" value="<?php echo $v['values'];?>" class="colored-success" type="checkbox">
+                                                    <span class="text"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                <?php endif;?>
+                                <?php if($v['d_type']==4):?>
+                                    <div class="form-group">
+                                        <label for="type" class="col-sm-2 control-label no-padding-right"><?php echo $v['cname'];?></label>
+                                        <div class="col-sm-6">
+                                            <select name="<?php echo $v['ename'];?>" id="">
+                                                <option value="">请选择</option>
+                                                <?php $v_arr=explode(',',$v['values']);
+                                                    foreach($v_arr as $k1=>$v1):
+                                                ?>
+                                                    <option <?php if($v1==$v['value']){echo 'selected="selected"';}?> value="<?php echo $v1;?>"><?php echo $v1;?></option>
+                                                <?php endforeach;?>
+                                            </select>
+                                        </div>
+                                        
+                                    </div>
+                                <?php endif;?>
+                                <?php if($v['d_type']==5):?>
+                                    <div class="form-group">
+                                        <label for="values" class="col-sm-2 control-label no-padding-right"><?php echo $v['cname'];?></label>
+                                        <div class="col-sm-6">
+                                            <textarea class="form-control" name="<?php echo $v['ename'];?>" ><?php echo $v['value'];?></textarea>
+                                        </div>
+                                        
+                                    </div>
+                                <?php endif;?>
+                                <?php if($v['d_type']==6):?>
+                                    <div class="form-group">
+                                        <label for="type" class="col-sm-2 control-label no-padding-right"><?php echo $v['cname'];?></label>
+                                        <div class="col-sm-6">
+                                            <input type="file" name="<?php echo $v['ename'];?>">
+                                            <?php if(!empty($v['value'])){echo "<img src='__ADMIN_UPLOAD__/".$v["value"]."' alt=''>";}else{echo "暂无logo";}?>
+                                        </div>
+                                    </div>
+                                <?php endif;?>
+                            <?php endforeach;?>
+                                <div class="form-group">
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                        <button type="submit" class="btn btn-default">保存信息</button>
+                                    </div>
+                                </div>
                             </form>
-                        </div>
-                        <div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
     <!-- /Page Body -->
 </div>
