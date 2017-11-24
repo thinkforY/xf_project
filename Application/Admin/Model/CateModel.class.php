@@ -6,7 +6,7 @@ use Admin\Model\BaseModel;
 /**
 * 菜单model
 */
-class AdminNavModel extends BaseModel
+class CateModel extends BaseModel
 {
 	/**
 	 * 删除数据
@@ -36,25 +36,9 @@ class AdminNavModel extends BaseModel
 		}
 		// 获取树形或者结构数据
 		if($type=='tree'){
-			$data=\Org\Nx\Data::tree($data,'name','id','pid');
+			$data=\Org\Nx\Data::tree($data,'catename','id','pid');
 		}elseif($type="level"){
 			$data=\Org\Nx\Data::channelLevel($data,0,'&nbsp;','id');
-			// 显示有权限的菜单
-			$auth=new \Think\Auth();
-			// p($data);
-			foreach ($data as $k => $v) {
-				// p($auth->check($v['mca'],$_SESSION['xf_admin']['id']));
-				if ($auth->check($v['mca'],$_SESSION['xf_admin']['id'])) {
-					foreach ($v['_data'] as $m => $n) {
-						if(!$auth->check($n['mca'],$_SESSION['xf_admin']['id'])){
-							unset($data[$k]['_data'][$m]);
-						}
-					}
-				}else{
-					// 删除无权限的菜单
-					unset($data[$k]);
-				}
-			}
 		}
 		// p($data);die;
 		return $data;

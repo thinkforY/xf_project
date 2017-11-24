@@ -5,7 +5,7 @@ use Admin\Controller\BaseController;
 class MenuController extends BaseController {
     public function lst(){
         $menu = D('Admin_nav');
-        $list = $menu->getTreeData("tree","sort,id");
+        $list = $menu->getTreeData("tree","sort DESC,id ASC");
         $this->assign('list',$list);
         $this->display();
     }

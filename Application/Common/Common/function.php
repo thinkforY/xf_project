@@ -673,7 +673,7 @@ function post_upload($path='file',$format='empty',$maxSize='52428800'){
     // 去除两边的/
     $path=trim($path,'/');
     // 添加Upload根目录
-    $path=strtolower(substr($path, 0,6))==='upload' ? ucfirst($path) : 'Upload/'.$path;
+    $path=strtolower(substr($path, 0,6))==='public' ? ucfirst($path) : 'Public/'.$path;
     // 上传文件类型控制
     $ext_arr= array(
             'image' => array('gif', 'jpg', 'jpeg', 'png', 'bmp'),

@@ -15,7 +15,7 @@ class BaseController extends Controller {
     //分配左侧菜单
     public function getLeftMenu(){
     	$menu = D('AdminNav');
-    	$menus = $menu->getTreeData("level",'sort,id');
+    	$menus = $menu->getTreeData("level",'sort DESC,id ASC');
         // p($menus);die;
     	$this->assign('menu',$menus);
     }
