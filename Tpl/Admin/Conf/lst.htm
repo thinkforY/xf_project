@@ -40,8 +40,19 @@
                                                 <td align="center">{$vo['id']}</td>
                                                 <td align="center">{$vo['cname']}</td>
                                                 <td align="center">{$vo['ename']}</td>
-                                                <td align="center">{$vo['d_type']}</td>
-                                                <td align="center">{$vo['c_type']}</td>
+                                                <td align="center">
+                                                    <if condition="$vo['d_type'] eq 1">输入框</if>
+                                                    <if condition="$vo['d_type'] eq 2">单选框</if>
+                                                    <if condition="$vo['d_type'] eq 3">复选框</if>
+                                                    <if condition="$vo['d_type'] eq 4">下拉菜单</if>
+                                                    <if condition="$vo['d_type'] eq 5">文本域</if>
+                                                    <if condition="$vo['d_type'] eq 6">附件</if>
+                                                </td>
+                                                <td align="center">
+                                                    <if condition="$vo['c_type'] eq 1">基本配置</if>
+                                                    <if condition="$vo['c_type'] eq 2">联系方式</if>
+                                                    <if condition="$vo['c_type'] eq 3">SEO</if>
+                                                </td>
                                                 <td align="center">{$vo['value']}</td>
                                                 <td align="center">{$vo['values']}</td>
                                                 <td align="center">

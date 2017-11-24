@@ -164,8 +164,19 @@
                                                 <td align="center"><?php echo ($vo['id']); ?></td>
                                                 <td align="center"><?php echo ($vo['cname']); ?></td>
                                                 <td align="center"><?php echo ($vo['ename']); ?></td>
-                                                <td align="center"><?php echo ($vo['d_type']); ?></td>
-                                                <td align="center"><?php echo ($vo['c_type']); ?></td>
+                                                <td align="center">
+                                                    <?php if($vo['d_type'] == 1): ?>输入框<?php endif; ?>
+                                                    <?php if($vo['d_type'] == 2): ?>单选框<?php endif; ?>
+                                                    <?php if($vo['d_type'] == 3): ?>复选框<?php endif; ?>
+                                                    <?php if($vo['d_type'] == 4): ?>下拉菜单<?php endif; ?>
+                                                    <?php if($vo['d_type'] == 5): ?>文本域<?php endif; ?>
+                                                    <?php if($vo['d_type'] == 6): ?>附件<?php endif; ?>
+                                                </td>
+                                                <td align="center">
+                                                    <?php if($vo['c_type'] == 1): ?>基本配置<?php endif; ?>
+                                                    <?php if($vo['c_type'] == 2): ?>联系方式<?php endif; ?>
+                                                    <?php if($vo['c_type'] == 3): ?>SEO<?php endif; ?>
+                                                </td>
                                                 <td align="center"><?php echo ($vo['value']); ?></td>
                                                 <td align="center"><?php echo ($vo['values']); ?></td>
                                                 <td align="center">

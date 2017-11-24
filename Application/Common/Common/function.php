@@ -149,7 +149,7 @@ function file_format($str){
             return 'text';
             break;
         default:
-            return 'image';
+            return 'string';
             break;
     }
 }
